@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haveli Restaurant - Poonch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #d32f2f;
+      --secondary: #fbc02d;
+      --accent: #388e3c;
+      --text-dark: #212121;
+      --text-light: #ffffff;
+      --bg-light: #f9f9f9;
+      --bg-dark: #111;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, var(--primary), var(--secondary), var(--accent));
+      color: var(--text-light);
+      text-align: center;
+      padding: 60px 20px 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background-color: var(--bg-dark);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: var(--primary);
+      font-size: 2em;
+      margin-bottom: 20px;
+      border-bottom: 3px solid var(--secondary);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      color: #333;
+      margin-top: 40px;
+      font-weight: 600;
+    }
+
+    .menu-list {
+      margin-left: 20px;
+    }
+
+    .menu-list ul {
+      margin-top: 10px;
+    }
+
+    .menu-list li {
+      margin-bottom: 8px;
+      font-size: 1.05em;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    form button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background: #b71c1c;
+    }
+
+    footer {
+      background-color: var(--bg-dark);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HAVELI RESTAURANT</h1>
+    <p>Welcome to Haveli Restaurant Poonch's Taste of Tradition.<br>
+    🌿 Fresh Ingredients • Time-Honored Recipes • Unforgettable Moments<br>
+    🍛 From the Valley to Your Plate</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#order">Order Online</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Located NEAR S.K BRIDGE, CHRIST SCHOOL ROAD, POONCH 185101, Haveli Restaurant brings you the flavors of Kashmir with a modern twist. From traditional recipes to new-age presentation, every dish is prepared with love and fresh ingredients. Our ambiance is a blend of heritage charm and modern comfort, making it perfect for families, friends, and foodies alike.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Full Menu</h2>
+    <div class="menu-list">
+      <h3>Fried Rice</h3>
+      <ul>
+        <li>Chicken Fried Rice – ₹80/140</li>
+        <li>Egg Chicken Fried Rice – ₹90/150</li>
+        <li>Paneer Fried Rice – ₹80/140</li>
+        <li>Veg Fried Rice – ₹60/100</li>
+      </ul>
+      <h3>Chickens</h3>
+      <ul>
+        <li>Chilli Chicken – ₹250/450</li>
+        <li>Lemon Chicken – ₹250/450</li>
+        <li>Kanti Chicken – ₹250/500</li>
+        <li>Chicken Pakoda – ₹250/500</li>
+        <li>Crispy Chicken – ₹300/550</li>
+        <li>Butter Chicken</li>
+        <li>Kadai Chicken</li>
+      </ul>
+      <h3>Omelette</h3>
+      <ul>
+        <li>Plain Omelette – ₹30</li>
+        <li>Masala Omelette – ₹50</li>
+        <li>Cheese Omelette – ₹70</li>
+      </ul>
+      <h3>Fries</h3>
+      <ul>
+        <li>Plain Fries – ₹70</li>
+        <li>Peri Peri Fries – ₹80</li>
+        <li>Cheese Fries – ₹100</li>
+      </ul>
+      <h3>Momo’s</h3>
+      <ul>
+        <li>Steam Momo’s – ₹60/100</li>
+        <li>Fried Momo’s – ₹70/120</li>
+        <li>Tandoori Momo’s – ₹80/150</li>
+        <li>Malai Momo’s – ₹80/150</li>
+        <li>Afghani Momo’s – ₹90/160</li>
+        <li>Kurkure Momo’s – ₹90/160</li>
+        <li>Chilli Momo’s – ₹90/160</li>
+      </ul>
+      <h3>Burger</h3>
+      <ul>
+        <li>Veg Burger – ₹60</li>
+        <li>Veg Cheese Burger – ₹80</li>
+        <li>Chicken Burger – ₹100</li>
+        <li>Chicken Cheese Burger – ₹120</li>
+        <li>Crispy Chicken Burger – ₹150</li>
+      </ul>
+      <h3>Sandwich</h3>
+      <ul>
+        <li>Veg Sandwich – ₹80</li>
+        <li>Veg Cheese Sandwich – ₹100</li>
+        <li>Paneer Grilled Sandwich – ₹100</li>
+        <li>Chicken Grilled Sandwich – ₹100</li>
+        <li>Chicken Sandwich – ₹100</li>
+        <li>Chicken Cheese Sandwich – ₹120</li>
+      </ul>
+      <h3>Pizza</h3>
+      <ul>
+        <li>Cheese Pizza</li>
+        <li>Cheese Corn Pizza</li>
+        <li>Onion Capsicum Pizza</li>
+        <li>Mashroom Pizza</li>
+        <li>Margerita Pizza</li>
+        <li>Famous Pizza</li>
+        <li>Chicken Pizza</li>
+      </ul>
+      <h3>Soup</h3>
+      <ul>
+        <li>Veg Soup – ₹60</li>
+        <li>Veg Manchow Soup – ₹70</li>
+        <li>Chicken Soup – ₹100</li>
+        <li>Chicken Manchow Soup – ₹110</li>
+        <li>Chicken Egg Soup – ₹130</li>
+      </ul>
+      <h3>Noodles</h3>
+      <ul>
+        <li>Veg Noodles – ₹50/90</li>
+        <li>Veg Hakka Noodles – ₹60/100</li>
+        <li>Veg Garlic Noodles – ₹60/100</li>
+        <li>Chicken Noodles – ₹80/140</li>
+        <li>Chicken Garlic Noodles – ₹80/150</li>
+        <li>Chicken Hakka Noodles – ₹80/150</li>
+      </ul>
+      <h3>Maggi</h3>
+      <ul>
+        <li>Plain Maggi – ₹30</li>
+        <li>Veg Maggi – ₹50</li>
+        <li>Cheese Maggi – ₹70</li>
+        <li>Chicken Maggi – ₹90</li>
+      </ul>
+      <h3>Tea</h3>
+      <ul>
+        <li>Classic Tea – ₹20</li>
+        <li>Ginger Tea – ₹30</li>
+        <li>Masala Tea – ₹30</li>
+        <li>Kashmiri Kawa – ₹30</li>
+        <li>Green Tea – ₹40</li>
+      </ul>
+      <h3>Coffee</h3>
+      <ul>
+        <li>Black Coffee – ₹40</li>
+        <li>Hot Coffee – ₹50</li>
+        <li>Hot Chocolate Coffee – ₹60</li>
+        <li>Cold Coffee – ₹99</li>
+      </ul>
+      <h3>Ice Cream</h3>
+      <ul>
+        <li>Vanilla</li>
+        <li>Butter Scotch</li>
+        <li>Chocolate</li>
+        <li>Strawberry</li>
+        <li>Mango</li>
+      </ul>
+      <h3>Mocktails</h3>
+      <ul>
+        <li>Fresh lime – ₹49</li>
+        <li>Lemon Soda – ₹79</li>
+        <li>Mint – ₹99</li>
+        <li>Blue Ocean – ₹99</li>
+        <li>Green Apple – ₹99</li>
+        <li>Watermelon – ₹99</li>
+        <li>Mixed Fruit – ₹99</li>
+        <li>Peach – ₹99</li>
+      </ul>
+      <h3>Shakes</h3>
+      <ul>
+        <li>Banana Shake – ₹79</li>
+        <li>Mango Shake – ₹79</li>
+        <li>Strawberry Shake – ₹79</li>
+        <li>Chocolate Shake – ₹89</li>
+        <li>Oreo Shake – ₹89</li>
+        <li>Oreo Kitkat Shake – ₹89</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Order Online</h2>
+    <p>We deliver within 4KM radius! Call <strong>6005311683</strong> or <strong>9596721076</strong> to place your order now!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="margin-top: 20px;">Follow us on Instagram: <a href="https://instagram.com/haveli_restaurant.0123" target="_blank">@haveli_restaurant.0123</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Haveli Restaurant | Designed with ❤️ in Poonch</p>
+  </footer>
+</body>
+</html>
